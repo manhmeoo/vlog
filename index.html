@@ -4,12 +4,14 @@
 <head>
     <title>page blog</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <h1>personal vlog</h1>
     <p>welcome</p>
-    
+
     <p>my name is Manh</p>
     <p>i was born in 2000</p>
     <P>
@@ -20,8 +22,9 @@
     <ul>
         <li>playing foodball</li>
         <li>playing videogames</li>
+        <a href="family.html" target="_blank">trang thong tin chi tiet</a>
     </ul>
-    <table>
+    <table class="table">
         <tr class="header">
             <td>stt</td>
             <td>name</td>
@@ -47,5 +50,27 @@
             <td>ban hang</td>
         </tr>
     </table>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
 </body>
+
+
 </html>
